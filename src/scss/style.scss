@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+//////////////////////////////////////////
+.bg-scissors{
+    background-image: radial-gradient(circle,hsl(39, 89%, 49%),hsl(40, 84%, 53%)) !important;
+    border-radius: 100%;
+    box-shadow: inset -1px -5px 1px 1px #00000026;
+}
+.bg-spock{
+    background-image: radial-gradient(circle,hsl(189, 59%, 53%),hsl(189, 58%, 57%)) !important;
+    border-radius: 100%;
+    box-shadow: inset -1px -5px 1px 1px #00000026;
+}
+.bg-lizard{
+    background-image: radial-gradient(circle,hsl(261, 73%, 60%),hsl(261, 72%, 63%)) !important;
+    border-radius: 100%;
+    box-shadow: inset -1px -5px 1px 1px #00000026;
+}
+.bg-paper{
+    background-image: radial-gradient(circle,hsl(230, 89%, 62%),hsl(230, 89%, 65%)) !important;
+    border-radius: 100%;
+    box-shadow: inset -1px -5px 1px 1px #00000026;
+}
+.bg-rock{
+    background-image: radial-gradient(circle,hsl(349, 71%, 52%),hsl(349, 70%, 56%)) !important;
+    border-radius: 100%;
+    box-shadow: inset -1px -5px 1px 1px #00000026;
+}
+//////////////////////////////////////////////
+.pattren{
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    overflow: hidden;
+    box-shadow: inset 1px -7px 1px 1px #00000026;
+    .pattren-inside{
+        position: relative;
+        height: 100%;
+        border-radius: 100%;
+        background-color: white;
+        z-index: 99;
+        box-shadow: inset 0px 5px 1px 1px #00000026;
+    }
+}
+//////////////////////////////////////////////
+.ptrn-scale{
+    transform: scale(1.7);
+    cursor: pointer;
+}
+@media screen and (max-width: 990px){
+    .ptrn-scale{
+        transform: scale(1.2);
+    }
+}
+@media screen and (max-width: 455px){
+    .ptrn-scale{
+        transform: scale(1);
+    }
+}
+@media screen and (max-width: 355px){
+    .ptrn-scale{
+        transform: scale(1);
+    }
+}
+////////////////////////////////////////////////
+.result-construct{
+    display: none;
+    h3{
+        color: white;
+        font-weight: 700;
+        letter-spacing: 2.5px;
+        text-transform: uppercase;
+        font-size: 2.5em;
+        margin-bottom: 26px;
+    }
+}
+.mybtn{
+    border: none;
+    outline: none;
+    width: 223px;
+    padding: 15px;
+    color: black;
+    background-color:white;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    z-index: 55;
+}
